@@ -24,3 +24,12 @@ go get -u -v sourcegraph.com/sqs/goreturns
 go get -u -v golang.org/x/tools/cmd/gorename
 ```
 
+##第四步
+安装编译delve
+
+https://github.com/derekparker/delve
+
+首先，通过很多次go get对这个包进行gobuild，的到一个二进制文件
+
+
+
