@@ -60,3 +60,7 @@ codesign -s timeloveboy /Volumes/MacData/golang.org/sysGOPATH//bin/dlv
 
 
 ![](52EC5D29-F4D7-43F4-9350-7974A83D8654.png)
+
+vscode会在目录下创建一个文件夹
+![](E34D3BC9-6387-491B-8452-665F572F3639.png)
+可以看到launch.json
