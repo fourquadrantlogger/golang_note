@@ -61,6 +61,7 @@ dlv-cert: no identity found
 make: *** [install] Error 1
 ```
 那么最好重新创建一个系统证书
+我创建的新系统证书是timeloveboy
 在delve目录下（有mackfile的目录），执行
 
 ```
