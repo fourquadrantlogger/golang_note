@@ -10,3 +10,17 @@ cmd-shift-p
 
 选择 最新版本的go-estension，一定要是最新版本，否则就会无法debug
 
+![](C76B1353-75CB-4E77-BB0D-59D034CAD333.png)
+
+##第三步
+安装插件，这一步需要翻墙下载golang.org里的包
+```
+go get -u -v github.com/nsf/gocode
+go get -u -v github.com/rogpeppe/godef
+go get -u -v github.com/golang/lint/golint
+go get -u -v github.com/lukehoban/go-find-references
+go get -u -v github.com/lukehoban/go-outline
+go get -u -v sourcegraph.com/sqs/goreturns
+go get -u -v golang.org/x/tools/cmd/gorename
+```
+
