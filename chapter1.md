@@ -59,3 +59,4 @@ codesign -s timeloveboy /Volumes/MacData/golang.org/sysGOPATH//bin/dlv
 重新打开vscode，f5,debug
 
 
+![](52EC5D29-F4D7-43F4-9350-7974A83D8654.png)
