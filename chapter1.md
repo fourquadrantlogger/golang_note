@@ -1,3 +1,12 @@
-# First Chapter
+# vscode mac安装过程
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+##第一步
+安装VSCODE
+
+##第二步
+```
+cmd-shift-p
+```
+
+选择 最新版本的go-estension，一定要是最新版本，否则就会无法debug
+
