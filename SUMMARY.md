@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](chapter1.md)
+* [mac vscode安装](chapter1.md)
 * [go package详解](chapter2.md)
 
