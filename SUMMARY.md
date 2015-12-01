@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [First Chapter](chapter1.md)
-* go package详解
+* [go package详解](chapter2.md)
 
