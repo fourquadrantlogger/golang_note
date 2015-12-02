@@ -24,5 +24,12 @@ bson的基本类型
 bson.D{{"a", 1}, {"b", true}}
 并自带Map()方法
 func Map() (m M)
+
 ```
+3.DocElem 
+4.M map
+```
+bson.M{"a": 1, "b": true}
+```
+5.MongoTimestamp Int64
 
