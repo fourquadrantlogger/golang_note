@@ -32,7 +32,9 @@ func Map() (m M)
 bson.M{"a": 1, "b": true}
 ```
 5.MongoTimestamp Int64
+
 6.func (id ObjectId) Time() time.Time 
 时间返回ID的时间戳部分
+
 7.Raw
 原始类型
