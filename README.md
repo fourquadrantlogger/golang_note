@@ -1,4 +1,8 @@
-My Awesome Book
-=======
+#《go语言开发笔记》
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+go语言发展至今，一直缺乏一本大全式的书，很多开发资料分数在网络与有经验的开发者大脑中。于是我决定把开发过程中学习到的，全部记录下来。
+
+欢迎大家参与到写作中来。
+weixin：timeloveboy
+
+
