@@ -6,5 +6,5 @@
 * [匿名结构体](chapter3.md)
 * [json map string byte[]格式互转](chapter4.md)
 * [mgo.bson使用指南](chapter5.md)
-* go 时间类型
+* [go 时间类型](datetime.md)
 
