@@ -7,5 +7,5 @@
 * [json map string byte[]格式互转](chapter4.md)
 * [mgo.bson使用指南](chapter5.md)
 * [go 时间类型](datetime.md)
-* [string.substring.md](string.substringmd.md)
+* [string.substring](string.substringmd.md)
 
