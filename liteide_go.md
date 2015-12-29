@@ -1,8 +1,12 @@
 #liteide安装指南
 
-##go最新版本下载地址
+##go最新版本源码下载地址
 
 https://go.googlesource.com/go/+
+
+安装包下载地址
+
+https://golang.org/dl/
 
 解压
 
