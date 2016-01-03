@@ -15,3 +15,9 @@ var str=rs[2:6]
 fmt.Println(string(str))
 
 ```
+
+##string to byte
+```byte
+s1:="abcd"
+b1:=[]byte(s1)
+```
