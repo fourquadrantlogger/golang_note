@@ -7,3 +7,5 @@
 tar -zxvf
 接着我们要添加环境变量
 vi /etc/profile
+更新一下环境变量
+source /ect/profile
