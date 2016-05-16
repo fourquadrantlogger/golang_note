@@ -17,3 +17,10 @@ https://github.com/visualfc/liteide/releases
 安装
 
 ##设置goroot gopath
+
+```
+# native compiler drawin amd64
+
+GOROOT=/usr/local/go
+GOPATH=/MacData/GOPATH
+```
