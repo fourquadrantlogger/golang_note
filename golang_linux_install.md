@@ -6,6 +6,14 @@
 用tar 命令来解压压缩包
 tar -zxvf
 接着我们要添加环境变量
-vi /etc/profile
+sudo gedit /etc/profile
+
+```
+export GOROOT=/usr/local/go
+export GOBIN=$GOROOT/bin
+export PATH=$PATH:$GOBIN
+export GOPATH=/media/timeloveboy/WinData/GOPATH
+```
+
 更新一下环境变量
 source /ect/profile
