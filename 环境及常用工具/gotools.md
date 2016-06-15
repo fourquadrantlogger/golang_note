@@ -5,3 +5,6 @@ godoc -http=:8090
 然后打开
 
 [go](http://localhost:8090/pkg/)
+
+cd $GOPATH/bin
+./gotour
