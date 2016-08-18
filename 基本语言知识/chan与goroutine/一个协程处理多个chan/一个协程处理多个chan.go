@@ -12,18 +12,20 @@ func main() {
 
 
 	go func() {
+		for true {
+			time.Sleep(time.Second * 1)
 
-		time.Sleep(time.Second * 1)
-
-		c1 <- "one"
+			c1 <- "one"
+		}
 
 	}()
 
 	go func() {
+		for true {
+			time.Sleep(time.Second * 2)
 
-		time.Sleep(time.Second * 2)
-
-		c2 <- "two"
+			c2 <- "two"
+		}
 
 	}()
 
