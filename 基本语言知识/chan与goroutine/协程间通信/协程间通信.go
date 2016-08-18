@@ -10,25 +10,30 @@ type Msg struct{
 	data string
 }
 
-func Sender(msg chan Msg){
+func Sender(msg chan *Msg){
 	count:=0
 	for true{
 		count++
 		time.Sleep(sleeptime)
-		msg<-Msg{count,time.Now().String()[0:19]}
+		msg<-&Msg{count%5,time.Now().String()[0:19]}
 	}
 }
 
-func Receiver(msg chan Msg)  {
+func Receiver(chanid int,msg chan *Msg)  {
 	for true {
 		m := <-msg
-		fmt.Println(m)
+
+		fmt.Println(chanid,*m)
 	}
 }
 func main() {
-	Message:=make(chan Msg)
+	Message:=make(chan *Msg)
 	go Sender(Message)
-	go Receiver(Message)
+	go Receiver(0,Message)
+	go Receiver(1,Message)
+	go Receiver(2,Message)
+	go Receiver(3,Message)
+	go Receiver(4,Message)
 
 	for true{}
 }
