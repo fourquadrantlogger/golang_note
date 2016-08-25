@@ -37,7 +37,8 @@ weixin：timeloveboy
 
 [编码解码](/常用包/编码解码)
 
-[协程与chan](/基本语言知识/chan与goroutine)
 ## 3.go高阶话题
+
+[协程与chan](/基本语言知识/chan与goroutine)
 
 
