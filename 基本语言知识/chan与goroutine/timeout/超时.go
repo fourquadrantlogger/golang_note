@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 )
-
+//不永久等别人的结果，对方可能有异常 (考虑timeout)
 
 func main() {
 	done := make(chan int, 1)

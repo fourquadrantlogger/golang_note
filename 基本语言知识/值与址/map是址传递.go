@@ -15,8 +15,12 @@ func main() {
 		"3":30,
 	}
 	n=m
+	changemap(m)
+	changemap(n)
+	fmt.Println(m,n)
+	fmt.Println(m,n)
+}
+func changemap(m map[string]int)  {
 	m["1"]=40;
-	n["3"]=60;
-	fmt.Println(m,n)
-	fmt.Println(m,n)
+	m["3"]=60;
 }
