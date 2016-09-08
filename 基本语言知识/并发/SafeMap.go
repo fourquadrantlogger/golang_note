@@ -56,3 +56,16 @@ func (m *SafeMap) Delete(k interface{}) {
 	defer m.lock.Unlock()
 	delete(m.sm, k)
 }
+
+//Get from maps return the k's value
+func (m *SafeMap) Keys() (keys []interface{}) {
+	m.lock.RLock()
+	defer m.lock.RUnlock()
+	keys = make([]interface{}, len(m.sm))
+	i := 0
+	for key, _ := range m.sm {
+		keys[i] = key
+		i++
+	}
+	return
+}
