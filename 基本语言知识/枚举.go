@@ -12,6 +12,13 @@ var days = [...]string{
 	"Saturday",
 }
 
+const (
+	WatchState = 1 << iota
+	MultiState
+	SubscribeState
+	MonitorState
+)
+
 func main() {
 	var a interface{}
 	a = days
@@ -22,5 +29,10 @@ func main() {
 	}
 	fmt.Println()
 	fmt.Println(len(days))
+
+	fmt.Println("WatchState", WatchState)
+	fmt.Println("MultiState", MultiState)
+	fmt.Println("SubscribeState", SubscribeState)
+	fmt.Println("MonitorState", MonitorState)
 
 }

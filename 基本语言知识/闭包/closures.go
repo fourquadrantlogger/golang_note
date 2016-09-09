@@ -1,14 +1,31 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
+
+type colsure func(*int)
+
+var add colsure = func(v *int) {
+	for {
+		(*v)++
+	}
+
+}
+var miux colsure = func(v *int) {
+	for {
+		(*v)--
+	}
+}
 
 func main() {
-	var closures [2]func()
-	for i := 0; i < 2; i++ {
-		closures[i] = func() {
-			fmt.Println(i)
-		}
+	i := 0
+	go add(&i)
+	go miux(&i)
+
+	for {
+		time.Sleep(time.Second)
+		fmt.Println(i)
 	}
-	closures[0]()
-	closures[1]()
 }
