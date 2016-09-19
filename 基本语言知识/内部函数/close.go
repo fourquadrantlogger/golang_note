@@ -2,18 +2,21 @@ package main
 
 import "fmt"
 
+/*
+push
+*/
 func main() {
-	in:=make(chan int,1)
+	in := make(chan int, 1)
 
-	in<-1
+	in <- 1
 
-	i:=<-in
+	i := <-in
 	fmt.Println(i)
 	close(in)
 
-	if v, ok:= <-in; ok {
+	if v, ok := <-in; ok {
 		fmt.Println(v)
-	}else {
+	} else {
 		fmt.Println(ok)
 	}
 }
