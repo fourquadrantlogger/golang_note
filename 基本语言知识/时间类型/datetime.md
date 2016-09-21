@@ -10,7 +10,11 @@ import (
 	"time"
 	)
 
-StringHelper.Substr(time.Now().String(),0,19)
-
+time.Now().String()[:19]
 2006-01-02 15:04:05
+```
+字符串,转时间
+```
+t, err := time.Parse("2006-01-02 15:04:05", time.Now().String()[:19])
+
 ```
