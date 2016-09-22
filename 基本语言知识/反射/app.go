@@ -5,12 +5,12 @@ import (
 	"reflect"
 )
 
-type MoeInt int;
+type MoeInt int
 
-func (this *MoeInt)Say(){
+func (this *MoeInt) Say() {
 	fmt.Println(*this)
 }
-func (this *MoeInt)say(){
+func (this *MoeInt) say() {
 	fmt.Println(*this)
 }
 func main() {
@@ -19,10 +19,10 @@ func main() {
 	fmt.Println("type:", reflect.TypeOf(x))
 
 	//反射函数
-	var m MoeInt=4;
-	i:=&m
-	object:=reflect.ValueOf(i);
-	object.MethodByName("Say").Call(nil);
-	object.MethodByName("say").Call(nil);
+	var m MoeInt = 4
+	i := &m
+	object := reflect.ValueOf(i)
+	object.MethodByName("Say").Call(nil)
+	object.MethodByName("say").Call(nil)
 
 }
