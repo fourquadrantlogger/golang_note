@@ -19,16 +19,24 @@ import (
 
 func main() {
 	var wg sync.WaitGroup
-
-	for i := 0; i < 5; i = i + 1 {
-		wg.Add(1)
+    wg.Add(20)
+	for i := 0; i < 10; i = i + 1 {
+		
+		go func() {
+			//wg.Done()
+			//defer wg.Add(-1)
+			EchoNumber(i)
+		}()
+	}
+	for i := 0; i < 10; i = i + 1 {
+		
 		go func(n int) {
-			// defer wg.Done()
-			defer wg.Add(-1)
+			//wg.Done()
+			//defer wg.Add(-1)
 			EchoNumber(n)
 		}(i)
 	}
-
+	
 	wg.Wait()
 }
 
