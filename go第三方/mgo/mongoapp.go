@@ -30,16 +30,7 @@ func getNextSeq(session *mgo.Session) int {
 	return doc.Seq
 
 }
-func main() {
-	session, err := mgo.Dial("127.0.0.1:27017")
-	if err != nil {
-		log.Fatal("无法打开MongoDB！")
-		return
-	}
-	defer session.Close()
-
-	clt := session.DB("test").C("test")
-
+func Collontion(session *mgo.Session, clt *mgo.Collection) {
 	wg := sync.WaitGroup{}
 	// 创建10个 go routine模拟多线程环境
 	for i := 0; i < 10; i++ {
