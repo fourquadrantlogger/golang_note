@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	m := make(map[int]string)
+	m := make(map[int]string, 1024)
 	var closures [3]func(int)
 	for i := 0; i < 3; i++ {
 		closures[i] = func(v int) {
@@ -24,6 +24,6 @@ func main() {
 	go closures[1](1)
 	go closures[2](2)
 	for {
-
+		fmt.Scanln()
 	}
 }
