@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-var chan3 chan int
-var chan4 chan int
+var chan3 = make(chan int, 10)
+var chan4 = make(chan int, 10)
 var chs = []chan int{chan3, chan4}
 var numbers = []int{1, 2, 3, 4, 5}
 
