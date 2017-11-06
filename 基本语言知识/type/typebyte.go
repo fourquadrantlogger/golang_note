@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
-type N byte
+type N struct {
+	A int `json:"a"`
+}byte
 
 func (this *N) Decode() byte {
 	return byte(*this)
