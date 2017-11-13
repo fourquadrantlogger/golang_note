@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/golang/protobuf/proto"
+)
 
 var chan3 = make(chan int, 10)
 var chan4 = make(chan int, 10)
@@ -21,7 +24,7 @@ func main() {
 func getNumber(i int) int {
 	fmt.Printf("numbers[%d]\n", i)
 	return numbers[i]
-
+	proto.Int32()
 }
 
 func getChan(i int) chan int {
